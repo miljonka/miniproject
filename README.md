@@ -1,5 +1,6 @@
 # miniproject
 
+WORK IN PROGRESS
 
 Using [Salt](https://saltproject.io/) to install applications like firefox that comes with uBlock etc. 
 
