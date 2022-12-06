@@ -8,5 +8,6 @@ packages:
   file.managed:
     - source: salt://MegaSalt/syspref.js
 
-
-
+/home/miljo/.mozilla:
+  file.directory:
+    - clean: True
