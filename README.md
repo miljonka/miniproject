@@ -14,7 +14,7 @@ Project done for the course  [Configuration Management Systems](https://terokarv
 
 INSTRUCTIONS:
 ```
-git clone https://github.com/miljonka/miniproject
+git clone https://github.com/miljonka/miniproject.git
 cd miniproject
 sudo salt-call --local --file-root srv/salt/ state.apply MegaSalt
 ```
