@@ -1,34 +1,40 @@
 {% set user = 'miljo' %}
 
+{% if grains['os'] == 'Ubuntu' %}
+
+/home/addrepo.sh:
+  file.managed:
+    - source: salt://MegaSalt/addrepo.sh
+    - mode: '0755'
+
+runscript:
+  cmd.run:
+    - name: bash /home/addrepo.sh
+
+{% endif %}
+
 Firefox_packages:
   pkg.installed:
     - pkgs:
       - webext-ublock-origin-firefox
-      - firefox
+      - firefox-esr
 
-/etc/firefox/syspref.js:
+/etc/firefox-esr/syspref.js:
   file.managed:
     - source: salt://MegaSalt/syspref.js
 
 /home/{{user}}/.mozilla:
   file.directory:
+    - user: {{user}}
+    - group: {{user}}
     - clean: True
 
-/home/{{user}}/discord-0.0.21.deb:
+
+/home/discord-0.0.21.deb:
   file.managed:
-    - user: {{user}}
-    - group: {{user}}
     - source: salt://MegaSalt/discord-0.0.21.deb
- 
-Install_Discord:
+
+discord_install:
   pkg.installed:
     - sources:
-      - discord: /home/{{user}}/discord-0.0.21.deb
-
-/home/{{user}}/Desktop/discord.desktop:
-  file.managed:
-    - user: {{user}}
-    - group: {{user}}
-    - source: salt://MegaSalt/discord.desktop
-    - mode: '0755'
-
+      - discord: /home/discord-0.0.21.deb
