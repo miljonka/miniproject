@@ -20,6 +20,8 @@ Project done for the course  [Configuration Management Systems](https://terokarv
 
 STATE OF THE PROJECT = WORK IN PROGRESS
 
+This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS. Use at your own risk!
+
 Rigth now applying the MegaSalt state does: 
 
 - install Firefox
@@ -61,8 +63,19 @@ Open your browser and look for the red icon on the right:
 ![ublock](https://user-images.githubusercontent.com/112076418/206705541-f8a72d12-9690-48ee-aa1f-29aefc636962.png)
 
 
+UNINSTALL:
 
 If you want to uninstall firefox, uBlock and Discord:
 ```
 sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord
 ```
+Clean firefox profiles and preferences:
+```
+sudo rm /etc/firefox-esr/syspref.js
+rm -r ~/.mozilla 
+```
+Remove discord installer created by the state:
+```
+sudo rm /home/discord-0.0.21.deb
+```
+
