@@ -31,6 +31,7 @@ Rigth now applying the MegaSalt state does:
 
 
 INSTRUCTIONS: \
+
 go to your /home/$USER folder \
 clone this repository \
 Set your $USER with command: ` sudo nano miniproject/MegaSalt/init.sls` \
