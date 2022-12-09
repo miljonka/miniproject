@@ -1,6 +1,6 @@
 # miniproject
 
-WORK IN PROGRESS
+WORK IN PROGRESS, rigth now this project works as it is. Planning on adding more must-have applications.
 
 Using [Salt](https://saltproject.io/) to install Firefox that comes with uBlock and preset homepage google.com + Discord
 
