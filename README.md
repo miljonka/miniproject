@@ -30,7 +30,7 @@ Rigth now applying the MegaSalt state does:
 - install Discord
 
 
-INSTRUCTIONS: \
+INSTRUCTIONS: 
 
 go to your /home/$USER folder \
 clone this repository \
