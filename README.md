@@ -2,7 +2,7 @@
 
 WORK IN PROGRESS, rigth now this project works as it is. Planning on adding more must-have applications.
 
-Using [Salt](https://saltproject.io/) to install Firefox that comes with uBlock and preset homepage google.com + Discord
+Using [Salt](https://saltproject.io/) to install Firefox-ESR that comes with uBlock and preset homepage google.com + Discord
 
 Small but good starter-pack of applications every computer needs!
 
@@ -24,7 +24,7 @@ This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS. Use
 
 Rigth now applying the MegaSalt state does: 
 
-- install Firefox
+- install Firefox-ESR
 - install uBlock origin for Firefox
 - sets homepage to google.com
 - install Discord
