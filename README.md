@@ -1,4 +1,4 @@
-# miniproject
+# Applications Starterpack
 
 WORK IN PROGRESS, rigth now this project works as it is. Planning on adding more must-have applications.
 
