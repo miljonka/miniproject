@@ -20,10 +20,9 @@ get_repo:
 
 {% endif %}
 
-packages_needed:
+firefoxNstuff:
   pkg.installed:
     - pkgs:
-      - software-properties-common
       - firefox-esr
       - webext-ublock-origin-firefox
 
