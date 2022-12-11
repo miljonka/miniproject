@@ -22,7 +22,7 @@ STATE OF THE PROJECT = WORK IN PROGRESS
 
 This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS. Use at your own risk!
 
-Rigth now applying the MegaSalt state does: 
+Rigth now applying the Starterpack state does: 
 
 - install Firefox-ESR
 - install uBlock origin for Firefox
@@ -34,22 +34,13 @@ INSTRUCTIONS:
 
 go to your /home/$USER folder \
 clone this repository \
-Set your $USER with command: ` sudo nano miniproject/MegaSalt/init.sls` \
-apply the state `sudo salt-call --local --file-root miniproject/ state.apply MegaSalt`
+apply the state `sudo salt-call --local --file-root miniproject/ state.apply Starterpack`
 
 Example from pinokkio:
 ```
 pinokkio@debian:~$ cd
 pinokkio@debian:~$ git clone https://github.com/miljonka/miniproject.git
-pinokkio@debian:~$ sudo nano miniproject/MegaSalt/init.sls
-```
-![set](https://user-images.githubusercontent.com/112076418/206702902-30d66b84-c337-4764-9197-ebdbb0ffd94d.png)
-
-Save with Ctrl + O, then press Enter \
-Exit with Ctrl + X
-
-```
-pinokkio@debian:~$ sudo salt-call --local --file-root miniproject/ state.apply MegaSalt
+pinokkio@debian:~$ sudo salt-call --local --file-root miniproject/ state.apply Starterpack
 ```
 
 If everything went smoothly, u should now have Firefox with uBlock and Discord ! 
@@ -70,11 +61,7 @@ If you want to uninstall firefox, uBlock and Discord:
 ```
 sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord
 ```
-Clean firefox profiles and preferences:
-```
-sudo rm /etc/firefox-esr/syspref.js
-rm -r ~/.mozilla 
-```
+
 Remove discord installer created by the state:
 ```
 sudo rm /home/discord-0.0.21.deb
