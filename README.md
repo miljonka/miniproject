@@ -59,14 +59,15 @@ UNINSTALL:
 
 If you want to uninstall firefox, uBlock and Discord:
 ```
-sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord
+$ sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord
 ```
 
 Remove discord installer created by the state:
 ```
-sudo rm /home/discord-0.0.21.deb
+$ sudo rm /home/discord-0.0.21.deb
 ```
 If you applied this state on Ubuntu and want to use snap-store instead of mozillateamPPA to re-install firefox:
 ```
-sudo add-apt-repository --remove ppa:mozillateam/ppa
+$ sudo rm /etc/apt/sources.list.d/mozillateam-ubuntu-ppa-jammy.list 
+$ sudo add-apt-repository --remove ppa:mozillateam/ppa
 ```
