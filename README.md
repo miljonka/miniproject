@@ -34,7 +34,7 @@ INSTRUCTIONS:
 
 go to your /home/$USER folder \
 clone this repository \
-apply the state `sudo salt-call --local --file-root miniproject/ state.apply Starterpack`
+apply the state with `$ sudo salt-call --local --file-root miniproject/ state.apply Starterpack`
 
 Example from pinokkio:
 ```
