@@ -41,7 +41,7 @@ Example from pinokkio:
 ```
 pinokkio@debian:~$ cd
 pinokkio@debian:~$ git clone https://github.com/miljonka/miniproject.git
-sudo nano miniproject/MegaSalt/init.sls
+pinokkio@debian:~$ sudo nano miniproject/MegaSalt/init.sls
 ```
 ![set](https://user-images.githubusercontent.com/112076418/206702902-30d66b84-c337-4764-9197-ebdbb0ffd94d.png)
 
