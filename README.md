@@ -79,7 +79,7 @@ Remove discord installer created by the state:
 ```
 sudo rm /home/discord-0.0.21.deb
 ```
-If you applied this state on Ubuntu and want to use snap-store to re-install firefox:
+If you applied this state on Ubuntu and want to use snap-store instead of mozillateamPPA to re-install firefox:
 ```
 sudo add-apt-repository --remove ppa:mozillateam/ppa
 ```
