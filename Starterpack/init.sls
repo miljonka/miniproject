@@ -2,6 +2,9 @@
 
 {% if grains['os'] == 'Ubuntu' %}
 
+software-properties-common:
+  pkg.installed
+
 get_repo:
   cmd.run:
     - name: sudo add-apt-repository -y ppa:mozillateam/ppa
@@ -17,11 +20,13 @@ get_repo:
 
 {% endif %}
 
-firefox-esr:
-  pkg.installed
+packages_needed:
+  pkg.installed:
+    - pkgs:
+      - software-properties-common
+      - firefox-esr
+      - webext-ublock-origin-firefox
 
-webext-ublock-origin-firefox:
-  pkg.installed
 
 /etc/firefox-esr/{{filename}}:
   file.managed:
