@@ -16,9 +16,7 @@ Project done for the course  [Configuration Management Systems](https://terokarv
 
 Full report on how the project was done [here](https://github.com/miljonka/Palvelinten-hallinta/wiki/Oma-projekti)
 
-&nbsp;
---
-&nbsp;
+***
 
 STATE OF THE PROJECT = WORK IN PROGRESS
 
