@@ -11,7 +11,7 @@ _Images are from: https://commons.wikimedia.org/wiki/Main_Page_
 
 Project done by myself for the course  [Configuration Management Systems](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/?from=MoodleNews) by Tero Karvinen
 
-Full report on how the project was done [here](https://github.com/miljonka/Palvelinten-hallinta/wiki/Oma-projekti)
+Full report on how the project was done [here](https://github.com/miljonka/Palvelinten-hallinta/wiki/h7_Oma-projekti)
 
 ***
 This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS virtual machines. Use at your own risk!
