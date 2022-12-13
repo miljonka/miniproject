@@ -9,7 +9,7 @@ _Images are from: https://commons.wikimedia.org/wiki/Main_Page_
 
 
 
-Project done for the course  [Configuration Management Systems](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/?from=MoodleNews) by Tero Karvinen
+Project done by myself for the course  [Configuration Management Systems](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/?from=MoodleNews) by Tero Karvinen
 
 Full report on how the project was done [here](https://github.com/miljonka/Palvelinten-hallinta/wiki/Oma-projekti)
 
