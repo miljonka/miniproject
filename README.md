@@ -58,7 +58,7 @@ Open your browser and look for the red icon on the right:
 
 UNINSTALL:
 
-If you want to uninstall firefox, uBlock and Discord:
+If you want to uninstall firefox, uBlock, Discord and flameshot:
 ```
 $ sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord flameshot
 ```
