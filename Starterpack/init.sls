@@ -25,7 +25,7 @@ firefoxNstuff:
     - pkgs:
       - firefox-esr
       - webext-ublock-origin-firefox
-
+      - flameshot
 
 /etc/firefox-esr/{{filename}}:
   file.managed:
