@@ -1,13 +1,10 @@
 # Applications Starterpack
 
-WORK IN PROGRESS, rigth now this project works as it is. Planning on adding more must-have applications.
-
-Using [Salt](https://saltproject.io/) to install Firefox-ESR that comes with uBlock and preset homepage google.com + Discord
+Using [Salt](https://saltproject.io/) to install Firefox-ESR that comes with uBlock and preset homepage google.com, Discord and Flameshot.
 
 Small but good starter-pack of applications every computer needs!
 
- ![photo](https://user-images.githubusercontent.com/112076418/206718193-22c76ea3-8688-4c20-8c27-83e9d11483a1.png)
- \
+ ![Nimetön](https://user-images.githubusercontent.com/112076418/207203587-2365f051-8647-4f72-a8d4-5b25a3cb9a9b.png) \
 _Images are from: https://commons.wikimedia.org/wiki/Main_Page_ 
 
 
@@ -17,17 +14,15 @@ Project done for the course  [Configuration Management Systems](https://terokarv
 Full report on how the project was done [here](https://github.com/miljonka/Palvelinten-hallinta/wiki/Oma-projekti)
 
 ***
-
-STATE OF THE PROJECT = WORK IN PROGRESS
-
-This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS. Use at your own risk!
+This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS virtual machines. Use at your own risk!
 
 Rigth now applying the Starterpack state does: 
 
-- install Firefox-ESR
+- install Firefox-ESR browser
 - install uBlock origin for Firefox
-- sets homepage to google.com
+- sets Firefox homepage to google.com
 - install Discord
+- install Flameshot
 
 
 INSTRUCTIONS: 
@@ -43,11 +38,17 @@ pinokkio@debian:~$ git clone https://github.com/miljonka/miniproject.git
 pinokkio@debian:~$ sudo salt-call --local --file-root miniproject/ state.apply Starterpack
 ```
 
-If everything went smoothly, u should now have Firefox with uBlock and Discord ! 
+If everything went smoothly, u should now have Firefox with uBlock, Discord and Flameshot ! 
 
-![a465f4df523e3cbdda9ed26990494267](https://user-images.githubusercontent.com/112076418/206704895-f595f660-e474-40cb-a193-2f64629fc10b.png)
 
-![c41f3a908d5e09c247923ce26a512f2b](https://user-images.githubusercontent.com/112076418/206704904-298ef390-857b-4338-9b9b-cd1eab22c718.png)
+![004b857ac38218a3ef858d7d75ddf29a](https://user-images.githubusercontent.com/112076418/207205179-05c242c9-dc87-435e-acae-27b45aae0ab9.png)
+
+
+![d338f430d26628713778ffe234ea2dbe](https://user-images.githubusercontent.com/112076418/207205186-e6284296-0829-4f44-a408-b50517ca0a75.png)
+
+
+![82fb66537959b655a2643008845a6947](https://user-images.githubusercontent.com/112076418/207205194-90fc72de-87ea-487e-b041-1b496f4721af.png)
+
 
 To check if uBlock installed correctly: \
 Open your browser and look for the red icon on the right:
@@ -59,14 +60,14 @@ UNINSTALL:
 
 If you want to uninstall firefox, uBlock and Discord:
 ```
-$ sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord
+$ sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord flameshot
 ```
 
 Remove discord installer created by the state:
 ```
 $ sudo rm /home/discord-0.0.21.deb
 ```
-If you applied this state on Ubuntu and want to use snap-store instead of mozillateamPPA to re-install firefox:
+If you applied Starterpack on Ubuntu and want to use snap-store instead of mozillateamPPA repository to re-install firefox:
 ```
 $ sudo rm /etc/apt/sources.list.d/mozillateam-ubuntu-ppa-jammy.list 
 $ sudo add-apt-repository --remove ppa:mozillateam/ppa
