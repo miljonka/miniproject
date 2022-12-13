@@ -1,6 +1,6 @@
 # Applications Starterpack
 
-Using [Salt](https://saltproject.io/) to install Firefox-ESR that comes with uBlock and preset homepage google.com, Discord and Flameshot.
+Using [Salt](https://saltproject.io/) to install Firefox-ESR that comes with uBlock and preset homepage google.com,  Discord and Flameshot.
 
 Small but good starter-pack of applications every computer needs!
 
@@ -19,10 +19,10 @@ This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS virt
 Right now applying the Starterpack state does: 
 
 - install Firefox-ESR browser
-- install uBlock origin for Firefox
+- install uBlock origin extension for Firefox
 - sets Firefox homepage to google.com
-- install Discord
-- install Flameshot
+- install Discord VoIP & chat application
+- install Flameshot screenshot tool
 
 
 INSTRUCTIONS: 
