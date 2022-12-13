@@ -16,7 +16,7 @@ Full report on how the project was done [here](https://github.com/miljonka/Palve
 ***
 This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS virtual machines. Use at your own risk!
 
-Rigth now applying the Starterpack state does: 
+Right now applying the Starterpack state does: 
 
 - install Firefox-ESR browser
 - install uBlock origin for Firefox
