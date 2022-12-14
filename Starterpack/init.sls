@@ -1,14 +1,18 @@
-{% set filename = 'firefox-esr.js' %} #default filename for firefox system wide settings
+#default filename for firefox system wide settings
+{% set filename = 'firefox-esr.js' %} 
 
-{% if grains['os'] == 'Ubuntu' %} #only run these if os is ubuntu
+#only run these if os is ubuntu
+{% if grains['os'] == 'Ubuntu' %} 
 
-software-properties-common: #needed to execute get_repo: 
+#needed to execute get_repo: 
+software-properties-common:
   pkg.installed
 
-get_repo: #runs a commands that adds mozillateam repository to be able to install firefox-esr from there
+#runs a commands if that adds mozillateam repository to be able to install firefox-esr from there
+get_repo: 
   cmd.run:
     - name: sudo add-apt-repository -y ppa:mozillateam/ppa
-    - creates: /etc/apt/sources.list.d/mozillateam-ubuntu-ppa-jammy.list  #runs the command only if this file is missing
+    - creates: /etc/apt/sources.list.d/mozillateam-ubuntu-ppa-jammy.list  
 
 #solution below is the way I thougth it was supposed to be done, but kept getting error messages due to a bug(?)
 
@@ -18,26 +22,31 @@ get_repo: #runs a commands that adds mozillateam repository to be able to instal
 #    - dist: precise
 #    - file: /etc/apt/sources.list.d/mozillateam.list
 
-{% set filename = 'syspref.js' %} #changes the filename firefox-esr.js to syspref.js if os is ubuntu
+#changes the filename firefox-esr.js to syspref.js if os is ubuntu
+{% set filename = 'syspref.js' %} 
 
 {% endif %}
 
-firefoxNstuff: #install packages
+#install packages
+firefoxNstuff: 
   pkg.installed:
     - pkgs:
       - firefox-esr
       - webext-ublock-origin-firefox
       - flameshot
-
-/etc/firefox-esr/{{filename}}: #firefox system wide settings with a filename variable
+      
+#firefox system wide settings with a filename variable
+/etc/firefox-esr/{{filename}}: 
   file.managed:
     - source: salt://Starterpack/firefox-esr.js
 
-/home/discord-0.0.22.deb: #discord installation files
+#discord installation files
+/home/discord-0.0.22.deb: 
   file.managed:
     - source: salt://Starterpack/discord-0.0.22.deb
 
-discord_install: #install discord from the files
+#install discord from the files
+discord_install: 
   pkg.installed:
     - sources:
       - discord: /home/discord-0.0.22.deb
