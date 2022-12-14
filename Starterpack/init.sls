@@ -8,7 +8,7 @@
 software-properties-common:
   pkg.installed
 
-#runs a commands if that adds mozillateam repository to be able to install firefox-esr from there
+#runs a command that adds mozillateam repository, if it already isnt added, to be able to install firefox-esr from there
 get_repo: 
   cmd.run:
     - name: sudo add-apt-repository -y ppa:mozillateam/ppa
