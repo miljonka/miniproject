@@ -4,7 +4,7 @@
 #only run these if os is ubuntu
 {% if grains['os'] == 'Ubuntu' %} 
 
-#needed to execute get_repo: 
+#needed to execute add-apt-repository command 
 software-properties-common:
   pkg.installed
 
