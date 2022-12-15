@@ -63,7 +63,7 @@ If you want to uninstall firefox, uBlock, Discord and Flameshot:
 $ sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord flameshot
 ```
 
-Remove discord installer created by the state:
+Remove discord packages created by the state:
 ```
 $ sudo rm /home/discord-0.0.21.deb
 ```
