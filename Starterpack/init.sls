@@ -1,4 +1,4 @@
-#default filename for firefox system wide settings
+#default filename for firefox-esr system wide settings
 {% set filename = 'firefox-esr.js' %} 
 
 #only run these if os is ubuntu
