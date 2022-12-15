@@ -15,6 +15,9 @@ pref('startup.homepage_welcome_url', "http://google.com/ncr");
 
 pref("extensions.update.enabled", true);
 
+//darkmode
+pref('layout.css.prefers-color-scheme.content-override', 0);
+
 // Use LANG environment variable to choose locale
 pref("intl.locale.requested", "");
 
