@@ -40,13 +40,8 @@ firefoxNstuff:
   file.managed:
     - source: salt://Starterpack/firefox-esr.js
 
-#discord installation files
-/home/discord-0.0.22.deb: 
-  file.managed:
-    - source: salt://Starterpack/discord-0.0.22.deb
-
-#install discord from the files
-discord_install: 
+#install discord
+install_discord: 
   pkg.installed:
     - sources:
-      - discord: /home/discord-0.0.22.deb
+      - discord: salt://Starterpack/discord-0.0.22.deb
