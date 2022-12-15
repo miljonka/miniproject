@@ -40,7 +40,7 @@ firefoxNstuff:
   file.managed:
     - source: salt://Starterpack/firefox-esr.js
 
-#install discord
+#install discord from salt master
 install_discord: 
   pkg.installed:
     - sources:
