@@ -63,10 +63,6 @@ If you want to uninstall firefox, uBlock, Discord and Flameshot:
 $ sudo apt-get autoremove --purge -y firefox-esr webext-ublock-origin-firefox discord flameshot
 ```
 
-Remove discord packages created by the state:
-```
-$ sudo rm /home/discord-0.0.21.deb
-```
 If you applied Starterpack on Ubuntu and want to use snap-store instead of mozillateamPPA repository to re-install firefox:
 ```
 $ sudo rm /etc/apt/sources.list.d/mozillateam-ubuntu-ppa-jammy.list 
