@@ -27,6 +27,12 @@ Right now applying the Starterpack state does:
 
 INSTRUCTIONS: 
 
+Install salt-minion if you dont already have it:
+```
+sudo apt-get update
+sudo apt-get -y install salt-minion
+```
+
 go to your /home/$USER folder \
 clone this repository \
 apply the state with `$ sudo salt-call --local --file-root miniproject/ state.apply Starterpack`
