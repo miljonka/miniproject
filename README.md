@@ -2,7 +2,7 @@
 
 Using [Salt](https://saltproject.io/) to install [Firefox-ESR](https://www.mozilla.org/en-US/firefox/enterprise/) browser, that comes with [uBlock](https://ublockorigin.com/) extension and preset homepage google.com,  [Discord](https://discord.com/) and [Flameshot](https://flameshot.org/) screenshotting tool.
 
-Small but good starter-pack of applications every computer needs!
+Small but good starterpack of applications every computer needs!
 
  ![Nimetön](https://user-images.githubusercontent.com/112076418/207203587-2365f051-8647-4f72-a8d4-5b25a3cb9a9b.png) \
 _Images are from: https://commons.wikimedia.org/wiki/Main_Page_ 
