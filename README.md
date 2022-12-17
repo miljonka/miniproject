@@ -14,7 +14,7 @@ Project done by myself for the course  [Configuration Management Systems](https:
 Full report on how the project was done [here](https://github.com/miljonka/Palvelinten-hallinta/wiki/h7_Oma-projekti)
 
 ***
-This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS virtual machines. Use at your own risk!
+This project has been done and tested with Debian 11 and Ubuntu 22.04.1 LTS virtual machines.
 
 Right now applying the Starterpack state does: 
 
