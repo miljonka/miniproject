@@ -29,8 +29,8 @@ INSTRUCTIONS:
 
 Install salt-minion if you dont already have it:
 ```
-sudo apt-get update
-sudo apt-get -y install salt-minion
+$ sudo apt-get update
+$ sudo apt-get -y install salt-minion
 ```
 
 go to your /home/$USER folder \
